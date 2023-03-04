@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZC-Shoppy</title>
+    <link rel="stylesheet" href="../css/style.css" class="css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">
+            <img class="logo__img" src="images/nav/logo.svg" alt="logo">
+        </a>
+        <ul class="navbar navbar--left__list" id="navbarLeft" >
+            <li class="navbar--left__item__close-button"><img id="close" src="images/nav/close-button.svg" alt="close button"></li>
+            <li><a class="navbar--left__item--active" href="#">Home</a></li>
+            <li><a class="navbar--left__item" href="#">Shop</a></li>
+            <li><a class="navbar--left__item" href="#">Blog</a></li>
+            <li><a class="navbar--left__item" href="#">About</a></li>
+            <li><a class="navbar--left__item" href="#">Contact</a></li>
+        </ul>
+
+        <div class="search-and-cart">
+            <div class="search">
+                <form class="search__search-bar" action="">
+                    <input type="text" placeholder="I'm shopping for..." name="search">
+                    <button class="search__search-bar--button" type="submit">Search</button>
+                </form>
+            </div>
+            <img class="search__icon" src="images/nav/search.svg" alt="search">
+            <a href="#" class="cart"><img src="images/nav/cart.svg" alt="cart"></a>
+        </div>
+
+        <div class="navbar navbar--right">
+            <ul class="navbar--right__list">
+                <li class="navbar--right__item">
+                    <a href="#">
+                        <img src="images/nav/fb.svg" alt="" class="navbar--right__img">
+                    </a>
+                </li>
+                <li class="navbar--right__item">
+                    <a href="#">
+                        <img src="images/nav/ig.svg" alt="" class="navbar--right__img">
+                    </a>
+                </li>
+                <li class="navbar--right__item">
+                    <a href="#">
+                        <img src="images/nav/twitter.svg" alt="" class="navbar--right__img">
+                    </a>
+                </li>
+                <li class="navbar--right__item">
+                    <a href="#">
+                        <img src="images/nav/yt.svg" alt="" class="navbar--right__img">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <img class="navbar--right__menu" id="menu" src="images/nav/menu.svg" alt="menu">
+    </header>
+
+    <section class="hero">
+        <div class="hero__container">
+            <h1 class="hero--item1">The look you need</h1>
+            <h1 class="hero--item2">the<br>style you<br>crave</h1>
+            <p class="hero--item3">Grab your discount code now and save up to 70%</p>
+            <button class="hero--button" type="button" onclick="location.href='index.html'">Shop now</button>
+        </div>
+    </section>
+
+    <section class="service">
+        <div class="service__container">
+            <div class="service__card service__card--1">
+                <a href="#">
+                    <img src="images/services/shipping.svg" alt="">
+                    <h1>Free Delivery</h1>
+                    <h2>Lorem ipsum dolor sit amet</h2>
+                </a>
+            </div>
+            <span class="span--1"></span>
+            <div class="service__card service__card--2">
+                <a href="#">
+                    <img src="images/services/money bank.svg" alt="">
+                    <h1>Money Back Guarantee</h1>
+                    <h2>Lorem ipsum dolor sit amet</h2>
+                </a>
+            </div>
+            <span class="span--2"></span>
+            <div class="service__card service__card--3">
+                <a href="#">
+                    <img src="images/services/online support.svg" alt="">
+                    <h1>Best Online Support</h1>
+                    <h2>Lorem ipsum dolor sit amet</h2>
+                </a>
+            </div>
+            <span class="span--3"></span>
+            <div class="service__card service__card--4">
+                <a href="#">
+                    <img src="images/services/gift.svg" alt="">
+                    <h1>Special Gift Card</h1>
+                    <h2>Lorem ipsum dolor sit amet</h2>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="banner1">
+        <div class="banner1__container">
+            <div class="box banner1--box1">
+                <h1>Special Offer</h1>
+                <h2>20%</h2>
+                <h3>Starting at $99</h3>
+                <button>Shop Now</button>
+            </div>
+            <div class="box banner1--box2">
+                <h1>Shoes</h1>
+                <h2>End season</h2>
+                <h3>70%</h3>
+                <h4>Off</h4>
+            </div>
+            <div class="box banner1--box3">
+                <h1>New Arrival</h1>
+                <h2>30%</h2>
+                <h3>Off</h3>
+                <h4>For your first 3 items</h4>
+            </div>
+            <div class="box banner1--box4">
+                <h1>Season</h1>
+                <h2>Fashion</h2>
+                <h3>Sale</h3>
+                <h4>Up To</h4>
+                <h5>70%</h5>
+            </div>
+            <div class="box banner1--box5">
+                <h1>Ready</h1>
+                <h2>To Start The Run</h2>
+                <button>Explore More</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured featured--1">
+        <div class="featured__container">
+            <h1 class="featured__header" >Featured Products</h1>
+            <p class="featured__subheader">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="featured__item__container">
+                <div class="featured__item-1 item-box">
+                    <a href="#">
+                        <div class="item-1__product pic-box">
+                            <img class="product__pic1" src="/images/featured/featured1/f1a.jpg" alt="">
+                        </div>
+                        <h1 class="featured__item-1--title">Women's Bar & Shield Logo Denim Jacket</h1>
+                        <h2 class="featured__item-1--price">$95.00</h2>
+                    </a>
+                </div>
+                <div class="featured__item-2 item-box">
+                    <a href="#">
+                        <div class="item-2__product pic-box">
+                            <img class="product__pic1" src="/images/featured/featured1/f1b.jpg" alt="">
+                        </div>
+                        <h1 class="featured__item-2--title">Men's Traveler Staple Lightweight Hoodie</h1>
+                        <h2 class="featured__item-2--price">$75.00</h2>
+                    </a>
+                </div>
+                <div class="featured__item-3 item-box">
+                    <a href="#">
+                        <div class="item-3__product pic-box">
+                            <img class="product__pic1" src="/images/featured/featured1/f1c.jpg" alt="">
+                        </div>
+                        <h1 class="featured__item-3--title">Men's Operative Riding Shirt Jacket</h1>
+                        <h2 class="featured__item-3--price">$100.00</h2>
+                    </a>
+                </div>
+                <div class="featured__item-4 item-box">
+                    <a href="#">
+                        <div class="item-4__product pic-box">
+                            <img class="product__pic1" src="/images/featured/featured1/f1d.jpg" alt="">
+                        </div>
+                        <h1 class="featured__item-4--title">Men's Essential Anorak</h1>
+                        <h2 class="featured__item-4--price">$110.00</h2>
+                    </a>
+                </div>
+                <div class="featured__item-5 item-box">
+                    <a href="#">
+                        <div class="item-5__product pic-box">
+                            <img class="product__pic1" src="/images/featured/featured1/f1e.jpg" alt="">
+                        </div>
+                        <h1 class="featured__item-5--title">Men's Viewpoint H-D ADV Henley</h1>
+                        <h2 class="featured__item-5--price">$60.00</h2>
+                    </a>
+                </div>
+                <div class="featured__item-6 item-box">
+                    <a href="#">
+                        <div class="item-6__product pic-box">
+                            <img class="product__pic1" src="/images/featured/featured1/f1f.jpg" alt="">
+                        </div>
+                        <h1 class="featured__item-6--title">Men's B&S Pocket Tee</h1>
+                        <h2 class="featured__item-6--price">$35.00</h2>
+                    </a>
+                </div>
+                <div class="featured__item-7 item-box">
+                    <a href="#">
+                        <div class="item-7__product pic-box">
+                            <img class="product__pic1" src="/images/featured/featured1/f1g.jpg" alt="">
+                        </div>
+                        <h1 class="featured__item-7--title">Men's Special Oil Polo</h1>
+                        <h2 class="featured__item-7--price">$50.00</h2>
+                    </a>
+                </div>
+                <div class="featured__item-8 item-box">
+                    <a href="#">
+                        <div class="item-8__product pic-box">
+                            <img class="product__pic1" src="/images/featured/featured1/f1h.jpg" alt="">
+                        </div>
+                        <h1 class="featured__item-8--title">Men's LS 1903 Collage Tee</h1>
+                        <h2 class="featured__item-8--price">$40.00</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="carousel">
+        <div class="carousel__header">
+            <h1>Hats & Caps</h1>
+            <h2>Lorem ipsum dolor sit amet consectetur adipiscing elit</h2>
+        </div>
+        <div class="carousel__parent--container">
+            <button class="carousel__btn btn-prev">
+                <img src="images/featured/featured2/next.svg" alt="">
+            </button>
+            <div class="carousel__container snap__inline">
+                <div class="carousel__card card--1">
+                    <a href="">
+                        <img src="images/featured/featured2/f2a.jpg" alt="">
+                        <h1 class="card__title">Women's TM Bar & Shield Cadet Cap</h1>
+                        <h2 class="card__price">$26.00</h2>
+                    </a>
+                </div>
+                <div class="carousel__card card--2">
+                    <a href="">
+                        <img src="images/featured/featured2/f2b.jpg" alt="">
+                        <h1 class="card__title">Harley-Davidson Patch Knit Hat</h1>
+                        <h2 class="card__price">$20.00</h2>
+                    </a>
+                </div>
+                <div class="carousel__card card--3">
+                    <a href="">
+                        <img src="images/featured/featured2/f2c.jpg" alt="">
+                        <h1 class="card__title">Women's Silver Wing Knit Hat</h1>
+                        <h2 class="card__price">$20.00</h2>
+                    </a>
+                </div>
+                <div class="carousel__card card--4">
+                    <a href="">
+                        <img src="images/featured/featured2/f2d.jpg" alt="">
+                        <h1 class="card__title">Women's Silver Wing Marled Knit Hat</h1>
+                        <h2 class="card__price">$16.00</h2>
+                    </a>
+                </div>
+                <div class="carousel__card card--5">
+                    <a href="">
+                        <img src="images/featured/featured2/f2e.jpg" alt="">
+                        <h1 class="card__title">Men's Stencil Cap</h1>
+                        <h2 class="card__price">$30.00</h2>
+                    </a>
+                </div>
+                <div class="carousel__card card--1">
+                    <a href="">
+                        <img src="images/featured/featured2/f2a.jpg" alt="">
+                        <h1 class="card__title">Women's TM Bar & Shield Cadet Cap</h1>
+                        <h2 class="card__price">$26.00</h2>
+                    </a>
+                </div>
+                <div class="carousel__card card--2">
+                    <a href="">
+                        <img src="images/featured/featured2/f2b.jpg" alt="">
+                        <h1 class="card__title">Harley-Davidson Patch Knit Hat</h1>
+                        <h2 class="card__price">$20.00</h2>
+                    </a>
+                </div>
+                <div class="carousel__card card--3">
+                    <a href="">
+                        <img src="images/featured/featured2/f2c.jpg" alt="">
+                        <h1 class="card__title">Women's Silver Wing Knit Hat</h1>
+                        <h2 class="card__price">$20.00</h2>
+                    </a>
+                </div>
+                <div class="carousel__card card--4">
+                    <a href="">
+                        <img src="images/featured/featured2/f2d.jpg" alt="">
+                        <h1 class="card__title">Women's Silver Wing Marled Knit Hat</h1>
+                        <h2 class="card__price">$16.00</h2>
+                    </a>
+                </div>
+                <div class="carousel__card card--5">
+                    <a href="">
+                        <img src="images/featured/featured2/f2e.jpg" alt="">
+                        <h1 class="card__title">Men's Stencil Cap</h1>
+                        <h2 class="card__price">$30.00</h2>
+                    </a>
+                </div>
+                <div class="carousel__card card--1">
+                    <a href="">
+                        <img src="images/featured/featured2/f2a.jpg" alt="">
+                        <h1 class="card__title">Women's TM Bar & Shield Cadet Cap</h1>
+                        <h2 class="card__price">$26.00</h2>
+                    </a>
+                </div>
+                <div class="carousel__card card--2">
+                    <a href="">
+                        <img src="images/featured/featured2/f2b.jpg" alt="">
+                        <h1 class="card__title">Harley-Davidson Patch Knit Hat</h1>
+                        <h2 class="card__price">$20.00</h2>
+                    </a>
+                </div>
+                <div class="carousel__card card--3">
+                    <a href="">
+                        <img src="images/featured/featured2/f2c.jpg" alt="">
+                        <h1 class="card__title">Women's Silver Wing Knit Hat</h1>
+                        <h2 class="card__price">$20.00</h2>
+                    </a>
+                </div>
+                <div class="carousel__card card--4">
+                    <a href="">
+                        <img src="images/featured/featured2/f2d.jpg" alt="">
+                        <h1 class="card__title">Women's Silver Wing Marled Knit Hat</h1>
+                        <h2 class="card__price">$16.00</h2>
+                    </a>
+                </div>
+                <div class="carousel__card card--5">
+                    <a href="">
+                        <img src="images/featured/featured2/f2e.jpg" alt="">
+                        <h1 class="card__title">Men's Stencil Cap</h1>
+                        <h2 class="card__price">$30.00</h2>
+                    </a>
+                </div>
+                <div class="carousel__card card--1">
+                    <a href="">
+                        <img src="images/featured/featured2/f2a.jpg" alt="">
+                        <h1 class="card__title">Women's TM Bar & Shield Cadet Cap</h1>
+                        <h2 class="card__price">$26.00</h2>
+                    </a>
+                </div>
+                <div class="carousel__card card--2">
+                    <a href="">
+                        <img src="images/featured/featured2/f2b.jpg" alt="">
+                        <h1 class="card__title">Harley-Davidson Patch Knit Hat</h1>
+                        <h2 class="card__price">$20.00</h2>
+                    </a>
+                </div>
+                <div class="carousel__card card--3">
+                    <a href="">
+                        <img src="images/featured/featured2/f2c.jpg" alt="">
+                        <h1 class="card__title">Women's Silver Wing Knit Hat</h1>
+                        <h2 class="card__price">$20.00</h2>
+                    </a>
+                </div>
+                <div class="carousel__card card--4">
+                    <a href="">
+                        <img src="images/featured/featured2/f2d.jpg" alt="">
+                        <h1 class="card__title">Women's Silver Wing Marled Knit Hat</h1>
+                        <h2 class="card__price">$16.00</h2>
+                    </a>
+                </div>
+                <div class="carousel__card card--5">
+                    <a href="">
+                        <img src="images/featured/featured2/f2e.jpg" alt="">
+                        <h1 class="card__title">Men's Stencil Cap</h1>
+                        <h2 class="card__price">$30.00</h2>
+                    </a>
+                </div>
+                <div class="carousel__card card--1">
+                    <a href="">
+                        <img src="images/featured/featured2/f2a.jpg" alt="">
+                        <h1 class="card__title">Women's TM Bar & Shield Cadet Cap</h1>
+                        <h2 class="card__price">$26.00</h2>
+                    </a>
+                </div>
+                <div class="carousel__card card--2">
+                    <a href="">
+                        <img src="images/featured/featured2/f2b.jpg" alt="">
+                        <h1 class="card__title">Harley-Davidson Patch Knit Hat</h1>
+                        <h2 class="card__price">$20.00</h2>
+                    </a>
+                </div>
+                <div class="carousel__card card--3">
+                    <a href="">
+                        <img src="images/featured/featured2/f2c.jpg" alt="">
+                        <h1 class="card__title">Women's Silver Wing Knit Hat</h1>
+                        <h2 class="card__price">$20.00</h2>
+                    </a>
+                </div>
+                <div class="carousel__card card--4">
+                    <a href="">
+                        <img src="images/featured/featured2/f2d.jpg" alt="">
+                        <h1 class="card__title">Women's Silver Wing Marled Knit Hat</h1>
+                        <h2 class="card__price">$16.00</h2>
+                    </a>
+                </div>
+                <div class="carousel__card card--5">
+                    <a href="">
+                        <img src="images/featured/featured2/f2e.jpg" alt="">
+                        <h1 class="card__title">Men's Stencil Cap</h1>
+                        <h2 class="card__price">$30.00</h2>
+                    </a>
+                </div>
+                <div class="carousel__card card--1">
+                    <a href="">
+                        <img src="images/featured/featured2/f2a.jpg" alt="">
+                        <h1 class="card__title">Women's TM Bar & Shield Cadet Cap</h1>
+                        <h2 class="card__price">$26.00</h2>
+                    </a>
+                </div>
+                <div class="carousel__card card--2">
+                    <a href="">
+                        <img src="images/featured/featured2/f2b.jpg" alt="">
+                        <h1 class="card__title">Harley-Davidson Patch Knit Hat</h1>
+                        <h2 class="card__price">$20.00</h2>
+                    </a>
+                </div>
+                <div class="carousel__card card--3">
+                    <a href="">
+                        <img src="images/featured/featured2/f2c.jpg" alt="">
+                        <h1 class="card__title">Women's Silver Wing Knit Hat</h1>
+                        <h2 class="card__price">$20.00</h2>
+                    </a>
+                </div>
+                <div class="carousel__card card--4">
+                    <a href="">
+                        <img src="images/featured/featured2/f2d.jpg" alt="">
+                        <h1 class="card__title">Women's Silver Wing Marled Knit Hat</h1>
+                        <h2 class="card__price">$16.00</h2>
+                    </a>
+                </div>
+                <div class="carousel__card card--5">
+                    <a href="">
+                        <img src="images/featured/featured2/f2e.jpg" alt="">
+                        <h1 class="card__title">Men's Stencil Cap</h1>
+                        <h2 class="card__price">$30.00</h2>
+                    </a>
+                </div>
+                
+            </div>
+            <button class="carousel__btn btn-next">
+                <img src="images/featured/featured2/next.svg" alt="">
+            </button>
+        </div>
+    </section>
+
+    <section class="featured featured--2">
+        <div class="featured__container">
+            <h1 class="featured__header" >On Sale Now!</h1>
+            <p class="featured__subheader">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="featured__item__container">
+                <div class="featured__item-1 item-box">
+                    <a href="#">
+                        <div class="item-1__product pic-box">
+                            <img class="product__pic1" src="/images/featured/featured3/f3a.jpg" alt="">
+                        </div>
+                        <h1 class="featured__item-1--title">Women's Salute Camouflage Henley Tank</h1>
+                        <h2 class="featured__item-1--price">$30.00</h2>
+                    </a>
+                </div>
+                <div class="featured__item-2 item-box">
+                    <a href="#">
+                        <div class="item-2__product pic-box">
+                            <img class="product__pic1" src="/images/featured/featured3/f3b.jpg" alt="">
+                        </div>
+                        <h1 class="featured__item-2--title">Women's Liberty Bell Stretch Denim Shirt</h1>
+                        <h2 class="featured__item-2--price">$75.00</h2>
+                    </a>
+                </div>
+                <div class="featured__item-3 item-box">
+                    <a href="#">
+                        <div class="item-3__product pic-box">
+                            <img class="product__pic1" src="/images/featured/featured3/f3c.jpg" alt="">
+                        </div>
+                        <h1 class="featured__item-3--title">Girl's Knit Doubler Short</h1>
+                        <h2 class="featured__item-3--price">$26.00</h2>
+                    </a>
+                </div>
+                <div class="featured__item-4 item-box">
+                    <a href="#">
+                        <div class="item-4__product pic-box">
+                            <img class="product__pic1" src="/images/featured/featured3/f3d.jpg" alt="">
+                        </div>
+                        <h1 class="featured__item-4--title">Men's Stencil Plaid Shirt</h1>
+                        <h2 class="featured__item-4--price">$80.00</h2>
+                    </a>
+                </div>
+                <div class="featured__item-5 item-box">
+                    <a href="#">
+                        <div class="item-5__product pic-box">
+                            <img class="product__pic1" src="/images/featured/featured3/f3e.jpg" alt="">
+                        </div>
+                        <h1 class="featured__item-5--title">Boy's Varsity Style #1 Jacket</h1>
+                        <h2 class="featured__item-5--price">$42.00</h2>
+                    </a>
+                </div>
+                <div class="featured__item-6 item-box">
+                    <a href="#">
+                        <div class="item-6__product pic-box">
+                            <img class="product__pic1" src="/images/featured/featured3/f3f.jpg" alt="">
+                        </div>
+                        <h1 class="featured__item-6--title">Men's Carve Denim Riding Pants</h1>
+                        <h2 class="featured__item-6--price">$85.00</h2>
+                    </a>
+                </div>
+                <div class="featured__item-7 item-box">
+                    <a href="#">
+                        <div class="item-7__product pic-box">
+                            <img class="product__pic1" src="/images/featured/featured3/f3g.jpg" alt="">
+                        </div>
+                        <h1 class="featured__item-7--title">Men's Traveler Pocket Tee</h1>
+                        <h2 class="featured__item-7--price">$45.00</h2>
+                    </a>
+                </div>
+                <div class="featured__item-8 item-box">
+                    <a href="#">
+                        <div class="item-8__product pic-box">
+                            <img class="product__pic1" src="/images/featured/featured3/f3h.jpg" alt="">
+                        </div>
+                        <h1 class="featured__item-8--title">Women's Pink Label Performance Leggings</h1>
+                        <h2 class="featured__item-8--price">$75.00</h2>
+                    </a>
+                </div>
+            </div>
+
+            <div class="view-more">
+                <button type="button">
+                    <a href="#">
+                        <h1>View More</h1>
+                    </a>
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    
+
+    <section class="banner2">
+        <div class="banner2__container">
+            <h1>Make Your</h1>
+            <h2>Style</h2>
+            <h3>Up To <span>70% Off</span></h3>
+            <button class="banner2__button">Explore More</button>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="footer__section--a">
+            <ul class="footer--a">
+                <li class="footer__logo">
+                    <a href="#">
+                        <img id="footer--logo" src="images/nav/logo.svg" alt="logo">
+                    </a>
+                </li>
+                <li class="footer__address">
+                    <span>
+                        <img src="/images/footer/icons/address.svg" alt="">
+                    </span>
+                    562 Wellington Road, Street 32, San Francisco
+                </li>
+                <li class="footer__mobile">
+                    <span>
+                        <img src="/images/footer/icons/phone.svg" alt="">
+                    </span>
+                    +01 2222 365 /(+91) 01 2345 6798
+                </li>
+                <li class="footer__email">
+                    <span>
+                        <img src="/images/footer/icons/email.svg" alt="">
+                    </span>
+                    zc-shopping@gmail.com
+                </li>
+                <li class="footer__social">
+                    <ul class="social__list">
+                        <li class="social__list--fb">
+                            <a href="#">
+                                <img src="images/nav/fb.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="social__list--ig">
+                            <a href="#">
+                                <img src="images/nav/ig.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="social__list--twitter">
+                            <a href="#">
+                                <img src="images/nav/twitter.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="social__list--yt">
+                            <a href="#">
+                                <img src="images/nav/yt.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__section--b">
+            <ul class="footer--b">
+                <li class="footer--b__item--about">
+                    <a href="#">About</a>
+                </li>
+                <li class="footer--b__item--about-us">
+                    <a href="#">About Us</a>
+                </li>
+                <li class="footer--b__item--delivery">
+                    <a href="#">Delivery Information</a>
+                </li>
+                <li class="footer--b__item--privacy">
+                    <a href="#">Privacy Policy</a>
+                </li>
+                <li class="footer--b__item--terms">
+                    <a href="#">Terms & Conditions</a>
+                </li>
+                <li class="footer--b__item--contact-us">
+                    <a href="#">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__section--c">
+            <ul class="footer--c">
+                <li class="footer--b__item--my-account">
+                    <a href="#">My Account</a>
+                </li>
+                <li class="footer--b__item--sign-in">
+                    <a href="#">Sign In</a>
+                </li>
+                <li class="footer--b__item--view-cart">
+                    <a href="#">View Cart</a>
+                </li>
+                <li class="footer--b__item--my-wishlist">
+                    <a href="#">My Wishlist</a>
+                </li>
+                <li class="footer--b__item--track">
+                    <a href="#">Track My Order</a>
+                </li>
+                <li class="footer--b__item--help">
+                    <a href="#">Help</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__section--d">
+            <p>Subscribe to our newsletter to stay up to date on everything and get up to 10% off on your first purchase!</p>
+            <form class="news-letter" action="">
+                <input type="text" placeholder="Enter your Email">
+                <button class="news-letter--button" type="submit">Join Now</button>
+            </form>
+            <img class="payment-gateway" src="images/payment gateway2.png" alt="">
+        </div>
+        <div class="credit">
+            <p>© 2022, My First - HTML CSS JavaScript Project E-commerce Website</p>
+        </div>
+        
+        
+    </section>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

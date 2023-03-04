@@ -1,0 +1,253 @@
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/hero_final2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top 0 right 50%;
+    display: flex;
+    // position: relative; //for background images filter
+    
+}
+
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    
+
+
+    .hero--item1 {
+        // font-family: 'Baskerville Old Face';
+        font-family: 'Poppins';
+        font-size: 3.5rem;
+        font-weight: 500;
+        line-height: 5rem;
+        // letter-spacing: 0.22rem;
+        color: rgb(39, 39, 39);
+        // padding-left: 8.75rem;
+        padding-left: clamp(6.52rem, 8vw, 8.75rem);
+        
+    }
+
+    .hero--item2 {
+        font-family: 'Baskerville Old Face';
+        // font-size: 8.7rem;
+        font-size: 9rem;
+        font-weight: 200;
+        letter-spacing: 2rem;
+        line-height: 100%;
+        color: #fff;
+        // margin-left: 16.375rem;
+        margin-left: clamp(6.52rem, 13vw, 16.375rem);
+    }
+
+
+    .hero--item3 {
+        margin-left: clamp(6.52rem, 13vw, 16.375rem);
+        letter-spacing: .1rem;
+        font-size: 1rem;
+        position: relative;
+        z-index: 1;
+        
+    }
+
+    .hero--item3::before {
+        content: '';        
+        top: .5rem;
+        left: 2rem;
+        height: 1rem;
+        width: 90%;
+        background-color: rgba(255, 255, 255, 0.384);
+        position: absolute;
+        z-index: -1;
+    }
+
+    .hero--button {
+        height: 2.48rem;
+        width: 9.625rem;
+        border: none;
+        background-color: var(--color-orange);
+        color: #fff;
+        font-size: 16px;
+        // margin-left: clamp(16.375rem, 5vw, 100px);
+        margin-left: clamp(6.52rem, 13vw, 16.375rem);
+        // margin-top: clamp(1.8rem, 4.6vw, 30px);
+        margin-top: 1.5rem;
+        cursor: pointer;
+    }
+
+    // .hero--button:hover {
+    //     border: 2px solid var(--color-orange);
+    //     color: var(--color-orange);
+    //     background-color: transparent;
+    // }
+
+    .hero--button:hover {
+        opacity: 0.8;
+        color: white;
+
+    }
+}
+
+/*.hero::after {
+    content: '';
+    width: inherit;
+    height: inherit;
+    background-color: rgba($color: #000000, $alpha: .5);
+    position: absolute;
+
+}*/
+
+
+
+// ipad landscape
+@media (max-width: 1024px) and (orientation: landscape) {
+
+    .hero--item1 {
+        font-size: 2.9rem !important;
+        padding-left: clamp(3.76rem, 2vw, 8.75rem) !important;
+    }
+
+    .hero--item2 {
+        font-size: 6rem !important;
+        line-height: 90% !important;
+        // margin-left: 16.375rem;
+    }
+
+    .hero--item3 {
+        letter-spacing: .05rem !important;
+        margin-top: 1.1rem;
+    }
+
+}
+
+
+// mini tablet landscape
+@media (max-width: 800px) and (orientation: landscape) {
+
+    .hero {
+        background-position: top 0 right 58% !important;
+        background-size: 185% !important;
+    }
+
+    .hero--item1 {
+        font-size: 2.3rem !important;
+    }
+
+    .hero--item2 {
+        font-size: 5rem !important;
+        line-height: 80% !important;
+        letter-spacing: 1.2rem !important;
+        // margin-left: 16.375rem;
+    }
+
+    .hero--item3 {
+        letter-spacing: 0 !important;
+        margin-top: 1.1rem;
+    }
+}
+
+// ipad
+@media (max-width: 768px) and (orientation: portrait) {
+    
+    .hero--item1 {
+        font-size: 2.9rem !important;
+        padding-left: clamp(3.76rem, 2vw, 8.75rem) !important;
+    }
+
+    .hero--item2 {
+        font-size: 7rem !important;
+        line-height: 75% !important;
+        // margin-left: 16.375rem;
+    }
+
+    .hero--item3 {
+        letter-spacing: .05rem !important;
+        margin-top: 1.1rem;
+    }
+
+}
+
+// mini tablet portrait
+@media (max-width: 600px) and (orientation: portrait) {
+
+    .hero--item1 {
+        font-size: 2.2rem !important;
+        padding-left: clamp(3.76rem, 2vw, 8.75rem) !important;
+    }
+
+    .hero--item2 {
+        font-size: 6rem !important;
+        line-height: 75% !important;
+        margin-left: 3.76rem !important;
+
+    }
+
+    .hero--item3 {
+        letter-spacing: 0rem !important;
+        margin-top: 1.1rem;
+        margin-left: 3.76rem !important;
+
+    }
+
+    .hero--button {
+        margin-left: 3.76rem !important;
+    }
+}
+
+
+@media (max-width: 375px) and (orientation: portrait) {
+
+    .hero {
+        background-position: top 0 right 45% !important;
+        background-size: 450%;
+        
+    }
+
+    .hero--item1 {
+        font-size: 1.5rem !important;
+        padding-left: clamp(2rem, 2vw, 8.75rem) !important;
+        line-height: 4rem !important;
+    }
+
+    .hero--item2 {
+        font-size: 5rem !important;
+        line-height: 80% !important;
+        margin-left: clamp(2rem, 2vw, 8.75rem) !important;
+
+    }
+
+    .hero--item3 {
+        letter-spacing: .037rem !important;
+        margin-top: 1.1rem;
+        margin-left: clamp(2rem, 2vw, 8.75rem) !important;
+        margin-right: 2rem !important;
+        font-weight: 400;
+        color: rgb(0, 0, 0) ;
+        position: relative;
+        z-index: 1;
+        
+        
+        
+    }
+
+    .hero--item3::before {
+        content: '';        
+        top: .5rem;
+        left: 2rem;
+        height: 1rem;
+        width: 88% !important;
+        background-color: rgba(184, 136, 136, 0.384);
+        position: absolute;
+        z-index: -1;
+    }
+
+    .hero--button {
+        margin-left: clamp(2rem, 2vw, 8.75rem) !important;
+    }
+
+}
+

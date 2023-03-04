@@ -1,0 +1,36 @@
+:root {
+    --color-orange: #F0810E;
+    --color-blue: #426F86;
+    --color-gray1: #CECECE;
+    --color-gray2: #828282;
+}
+
+
+html, body {
+    font-weight: normal;
+}
+
+img {
+    height: 100%;
+    width: auto;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',Segoe UI,Open Sans;
+    outline-style: none;
+    // background-color:rgba(100, 250, 162, 0.829);
+    
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
