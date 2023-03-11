@@ -101,7 +101,9 @@
     }
 }
 
-@media (max-width: 375px) {
+// @media (max-width: 375px) {
+// @media (max-width: 500px) {
+@media (max-width: 390px) {
     .service__container{
         grid-template-columns: 1fr !important;
 
